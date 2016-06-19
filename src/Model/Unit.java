@@ -6,7 +6,6 @@ public class Unit {
 	public Unit(int hp) {
 		this.hp = hp;
 	}
-
 	
 	public void inform() {
 		System.out.println(hp);
