@@ -2,6 +2,7 @@ package Controller;
 
 import Model.Friebat;
 import Model.Marin;
+import Model.Unit;
 
 public class Controller {
 
@@ -9,13 +10,15 @@ public class Controller {
 		// TODO Auto-generated method stub
 
 		
-		Marin m1 = new Marin();
-	    Marin m2 = new Marin();	
-	    Friebat f1 = new Friebat();
-	    Friebat f2 = new Friebat();
+		Unit m1 = new Marin();
+	    Unit m2 = new Marin();	
+	    Unit f1 = new Friebat();
+	    Unit f2 = new Friebat();
 		
-	    m1.attack(m2);
 	    
+	    
+	    m1.inform();
+	    m1.attack(f2);
 	    
 	    
 	    

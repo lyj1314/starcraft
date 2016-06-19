@@ -10,6 +10,10 @@ public class Unit {
 	public void inform() {
 		System.out.println(hp);
 	}
+
+	public void attack(Unit unit){
+		 System.out.println("АјАн");
+	}
 	
 	
 }

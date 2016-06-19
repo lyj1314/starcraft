@@ -2,11 +2,12 @@ package Model;
 
 public class Friebat extends Unit{
 		public Friebat() {
-			super(120);
-		}
-	int HP = 50;
-	int damige = 5;
-	int flashdam = 2;
+				super(120);
+					}
+	
+	public int HP = 50;
+	public int damige = 5;
+	public int flashdam = 2;
 	
 		
 	public void attack(Marin target){
@@ -20,7 +21,7 @@ public class Friebat extends Unit{
 	}
 
 	
-	public void attack(Friebat target){
+	public void attack1(Friebat target){
 		target.HP = target.HP - this.damige - this.flashdam;
 		
 		if(target.HP>0){
