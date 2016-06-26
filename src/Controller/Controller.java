@@ -46,26 +46,37 @@ public class Controller {
 	    	
 	    	case 3 :
 	    		System.out.println(list.size() + "마리");
-	    		
 	    		for(int i=0; i<list.size(); i++){
 	    			Unit unit = list.get(i);
-		    		unit.inform();
+		    		unit.name();
 		    		break;
 	    		}
 	    	
 	    	case 4 :
 	    		for (int i = 0; i < list.size(); i++) {
 	    			Unit unit = list.get(i);
-	    			System.out.println( i + unit.getName());
+	    			System.out.println( i +":"+ unit.getName());
 				}
-	    		break;
 	    		
+	    		int input1 = scanner.nextInt();
+	    		if(input1 >0) {
+	    			System.out.println("1:공격개시");
+	    			System.out.println("2:이동하라");
+	    		} else {
+	    			System.out.println("1:공격개시");
+	    			System.out.println("2:이동하라");
+	    			break;
+	    		}
+	    	int input2 = scanner.nextInt();	
+	    		Unit unit = list.get(input2);
+			System.out.println("공격할수없는대상 : " + unit.getName());
+			 
+					
+				
 	    	}
-	    	
-	    }
 	    	}
 	    }
-	
+}
 
 
 
