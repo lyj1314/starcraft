@@ -11,13 +11,6 @@ import Model.Unit;
 public class Controller {
 
 	public static void main(String[] args) {
-		
-//		Unit m1 = new Marin();
-//	    Unit m2 = new Marin();	
-//	    Unit f1 = new Friebat();
-//	    Unit f2 = new Friebat();
-	    
-	  
 	    
 	    List<Unit> list = new ArrayList<Unit>();
 	    Scanner scanner = new Scanner(System.in);
@@ -68,27 +61,10 @@ public class Controller {
 	    			break;
 	    		}
 	    	int input2 = scanner.nextInt();	
-	    		Unit unit = list.get(input2);
-			System.out.println("공격할수없는대상 : " + unit.getName());
-			 
-					
-				
+	    		for (Unit unit : list) {
+					//
+				}
 	    	}
 	    	}
 	    }
 }
-
-
-
-
-//TODO Auto-generated method stub
-
-
-		//Unit m1 = new Marin();
-	    //Unit m2 = new Marin();	
-	    //Unit f1 = new Friebat();
-	    //Unit f2 = new Friebat();
-	    
-	    
-	    //m1.inform();
-	    //m1.attack(f2);

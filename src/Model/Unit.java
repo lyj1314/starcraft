@@ -4,7 +4,7 @@ public class Unit {
 	protected int hp;
 	protected int hit;
 	protected String name;
-
+	
 	
 	public Unit(String name, int hp, int hit) {
 		this.name = name;
